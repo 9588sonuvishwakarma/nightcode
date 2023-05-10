@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/nightcode/static/css/main.43bdbdaa.chunk.css",
+    "main.js": "/nightcode/static/js/main.9a5d88d1.chunk.js",
+    "main.js.map": "/nightcode/static/js/main.9a5d88d1.chunk.js.map",
+    "runtime-main.js": "/nightcode/static/js/runtime-main.9005709a.js",
+    "runtime-main.js.map": "/nightcode/static/js/runtime-main.9005709a.js.map",
+    "static/js/2.dc1342a2.chunk.js": "/nightcode/static/js/2.dc1342a2.chunk.js",
+    "static/js/2.dc1342a2.chunk.js.map": "/nightcode/static/js/2.dc1342a2.chunk.js.map",
+    "static/js/3.97668185.chunk.js": "/nightcode/static/js/3.97668185.chunk.js",
+    "static/js/3.97668185.chunk.js.map": "/nightcode/static/js/3.97668185.chunk.js.map",
+    "index.html": "/nightcode/index.html",
+    "static/css/main.43bdbdaa.chunk.css.map": "/nightcode/static/css/main.43bdbdaa.chunk.css.map",
+    "static/js/2.dc1342a2.chunk.js.LICENSE.txt": "/nightcode/static/js/2.dc1342a2.chunk.js.LICENSE.txt",
+    "static/media/user.2928300a.jpg": "/nightcode/static/media/user.2928300a.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9005709a.js",
+    "static/js/2.dc1342a2.chunk.js",
+    "static/css/main.43bdbdaa.chunk.css",
+    "static/js/main.9a5d88d1.chunk.js"
+  ]
+}
