@@ -30,9 +30,9 @@ export const menuItems = [
     ],
   },
   {
-    name: "Content",
+    name: "Flowcontrol",
     exact: true,
-    to: `/content`,
+    to: `/Flowcontrol`,
     iconClassName: "bi bi-speedometer2",
     subMenus: [
       { name: "Courses", to: "/content/courses" },
