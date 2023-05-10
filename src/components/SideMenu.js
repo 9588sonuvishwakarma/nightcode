@@ -12,10 +12,22 @@ import MenuItem from "./MenuItem";
 // added more menuItems for testing
 export const menuItems = [
   {
-    name: "Dashboard",
+    name: "Introducation",
     exact: true,
     to: "/",
     iconClassName: "bi bi-speedometer2",
+    subMenus: [
+      { name: "Variable", to: "/Variable" },
+      { name: "Data Type", to: "/Data Type" },
+      { name: "Basic I/O", to: "/Basic i/o" },
+
+      { name: "Type Conversion", to: "/Type Conversion" },
+
+      { name: "Operators", to: "/Operators" },
+
+      { name: "Comments", to: "/Comments" },
+
+    ],
   },
   {
     name: "Content",

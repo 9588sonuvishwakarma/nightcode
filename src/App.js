@@ -3,10 +3,28 @@ import SideMenu, { menuItems } from "./components/SideMenu";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { useState } from "react";
-const Dashboard = () => <h1>Dashboard</h1>;
+// Introdction part......................................
+const Introduction = () => <h1></h1>;
+const Variable = () => <div>
+  <hr></hr>
+  <h1  style={{margin:"20px"}}>C++ Variables</h1>
+  <p style={{fontSize:"18px" , fontFamily:"Courier New", fontWeight:"bold"}} > In programming, a variable is a container (storage area) to hold data.
+
+To indicate the storage area, each variable should be given a unique name (identifier)</p>
+ <h4 style={{textAlign:"center", lineHeight:"40px"}}>For example. <span >int age = 14;</span></h4>
+ <p style={{fontSize:"18px" , fontFamily:"Courier New", fontWeight:"bold"}} >Here, age is a variable of the int data type, and we have assigned an integer value 14 to it.
+
+Note: The int data type suggests that the variable can only hold integers. Similarly, we can use the double data type if we have to store decimals and exponentials.
+
+We will learn about all the data types in detail in the next tutorial.
+
+The value of a variable can be changed, hence the name variable.</p> 
+ 
+</div>;
+
 const Content = () => <h1>Content</h1>;
-const Courses = () => <h1>Content/Courses</h1>;
-const Videos = () => <h1>Content/Videos</h1>;
+const Courses = () => <h1>Content/sonu</h1>;
+const Videos = () => <h1>Content/videos</h1>;
 const Design = () => <h1>Design</h1>;
 const Content2 = () => <h1>Content2</h1>;
 const Courses2 = () => <h1>Content/Courses 2</h1>;
@@ -46,32 +64,35 @@ function App() {
 
            <Switch>
             <Route exact path={"/"}>
-              <Dashboard />
+              <Introduction />
+            </Route>
+            <Route exact path={"/Variable"}>
+              <Variable />
             </Route>
             <Route exact path={"/content"}>
               <Content />
             </Route>
-            {/* // <Route path={"/content/courses"}>
-            //   <Courses />
-            // </Route>
-            // <Route path={"/content/videos"}>
-            //   <Videos />
-            // </Route>
-            // <Route path={"/design"}>
-            //   <Design />
-            // </Route>
-            // <Route exact path={"/content-2"}>
-            //   <Content2 />
-            // </Route>
-            // <Route path={"/content-2/courses"}>
-            //   <Courses2 />
-            // </Route>
-            // <Route path={"/content-2/videos"}>
-            //   <Videos2 />
-            // </Route>
-            // <Route path={"/design-2"}>
-            //   <Design2 />
-            // </Route> */}
+             <Route path={"/content/courses"}>
+               <Courses />
+            </Route>
+              <Route path={"/content/videos"}>
+               <Videos />
+             </Route>
+             <Route path={"/design"}>
+               <Design />
+             </Route>
+             <Route exact path={"/content-2"}>
+               <Content2 />
+             </Route>
+            <Route path={"/content-2/courses"}>
+               <Courses2 />
+             </Route>
+            <Route path={"/content-2/videos"}>
+              <Videos2 />
+            </Route>
+             <Route path={"/design-2"}>
+              <Design2 />
+             </Route> 
           </Switch> 
         </div>
       </Router>
