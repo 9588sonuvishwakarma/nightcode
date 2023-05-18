@@ -3,16 +3,17 @@ import SideMenu, { menuItems } from "./components/SideMenu";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { useState } from "react";
+import arya from "./components/arya";
 // Introdction part......................................
 const Introduction = () => <h1></h1>;
 const Variable = () => <div>
   <hr></hr>
   <h1  style={{margin:"20px"}}>C++ Variables</h1>
-  <p style={{fontSize:"18px" , fontFamily:"Courier New", fontWeight:"bold"}} > In programming, a variable is a container (storage area) to hold data.
+  <p className="arya" style={{fontSize:"18px" , fontFamily:"Courier New", fontWeight:"bold"}} > In programming, a variable is a container (storage area) to hold data.
 
 To indicate the storage area, each variable should be given a unique name (identifier)</p>
- <h4 style={{textAlign:"center", lineHeight:"40px"}}>For example. <span >int age = 14;</span></h4>
- <p style={{fontSize:"18px" , fontFamily:"Courier New", fontWeight:"bold"}} >Here, age is a variable of the int data type, and we have assigned an integer value 14 to it.
+ <h4 className="example" style={{textAlign:"center", lineHeight:"40px"}}>For example. <span >int age = 14;</span></h4>
+ <p className="arya" style={{fontSize:"18px" , fontFamily:"Courier New", fontWeight:"bold"}} >Here, age is a variable of the int data type, and we have assigned an integer value 14 to it.
 
 Note: The int data type suggests that the variable can only hold integers. Similarly, we can use the double data type if we have to store decimals and exponentials.
 
@@ -49,13 +50,21 @@ function App() {
           instead of hard coding all the routes */}
           {menuItems.map((menu, index) => (
             <>
+
+
+
+            {/* heading  */}
               <Route key={menu.name} exact={menu.exact} path={menu.to}>
-                <h1>{menu.name}</h1>
+                <h1 style={{color:"blue"}}>{menu.name}</h1>
               </Route>
+
+
+
+              {/* menu detail here....... */}
               {menu.subMenus && menu.subMenus.length > 0
                 ? menu.subMenus.map((subMenu, i) => (
                     <Route key={subMenu.name} path={subMenu.to}>
-                      <h1>{subMenu.name}</h1>
+                      <h1 style={{color:"blue"}}>{subMenu.name}</h1>
                     </Route>
                   ))
                 : null}

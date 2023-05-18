@@ -2,6 +2,15 @@
     margin: 0;
     padding: 0;
 }
+.arya:hover{
+    color:rgb(255, 119, 0);
+    cursor: pointer;
+
+}
+
+.example:hover{
+    color:rgb(174, 163, 0);
+}
 ul{
     padding: 0;
     margin: 0;
